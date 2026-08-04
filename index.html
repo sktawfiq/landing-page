@@ -9,34 +9,34 @@
   <body>
     <header>
       <div class="logo">LOGO</div>
-      <div class="links">
+      <nav class="links">
         <a href="#">Home</a>
         <a href="#">Courses</a>
         <a href="#">About</a>
         <a href="#">Contact</a>
-      </div>
+      </nav>
     </header>
     <main>
       <section class="hero">
-        <p>Learn Web Development Like a Pro</p>
+        <h1>Learn Web Development Like a Pro</h1>
         <p>Become a Job-Ready Full-Stack Developer</p>
         <div class="hero_btn">
-          <button type="button"><a href="#">Get Started</a></button>
-          <button type="button"><a href="#">View Courses</a></button>
+          <a href="#">Get Started</a>
+          <a href="#">View Courses</a>
         </div>
       </section>
       <section class="features">
         <h1>Why Choose Us?</h1>
-        <div class="features_link">
-          <div id="learnByBuild">
+        <div class="features_grid">
+          <div class="feature-card">
             <h2>📚 Learn by Building</h2>
             <p>Build real projects instead of watching endless tutorials.</p>
           </div>
-          <div id="jobReady">
+          <div class="feature-card">
             <h2>💼 Job Ready</h2>
             <p>Portfolio-focused curriculum.</p>
           </div>
-          <div id="modernTech">
+          <div class="feature-card">
             <h2>🚀 Modern Tech</h2>
             <p>HTML, CSS, JavaScript, React, Node.js</p>
           </div>
@@ -45,7 +45,7 @@
       <section class="testimonials">
         <h1>Student Testimonials</h1>
         <div class="reviews">
-          <div>
+          <div class="testimonial-card">
             <p>★★★★★</p>
             <h3>"Amazing course!"</h3>
             <p>
@@ -53,7 +53,7 @@
               — Alex
             </p>
           </div>
-          <div>
+          <div class="testimonial-card">
             <p>★★★★★</p>
             <h3>"Loved it!"</h3>
             <p>
@@ -61,7 +61,7 @@
               — Bryan
             </p>
           </div>
-          <div>
+          <div class="testimonial-card">
             <p>★★★★★</p>
             <h3>"Highly Recommend!"</h3>
             <p>
@@ -71,7 +71,7 @@
           </div>
         </div>
       </section>
-      <section class="contact_form">
+      <section class="contact">
         <h1>Contact Us</h1>
         <form action="">
           <div class="form-group">
@@ -95,14 +95,13 @@
             />
           </div>
           <div class="form-group">
-            <label for="message">Message</label>
-            <input
-              type="text"
+            <label for="message">Message</label><br />
+            <textarea
               id="message"
               name="contactMessage"
               placeholder="Enter your Message"
               required
-            />
+            ></textarea>
           </div>
           <button class="btn" id="form-submit-btn" type="submit">
             Send Message
