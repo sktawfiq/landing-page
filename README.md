@@ -1,6 +1,6 @@
 # Responsive Product Landing Page
 
-A responsive product/company landing page built using HTML5 and CSS3.
+A responsive product landing page built with **HTML5** and **CSS3** using **Flexbox** and **Media Queries**.
 
 ## 🚀 Live Demo
 
@@ -8,18 +8,18 @@ https://sktawfiq.github.io/landing-page/
 
 ## 📸 Screenshot
 
-(Add a screenshot later)
+![Landing Page Preview](assets/landing-page-preview.png)
 
 ## ✨ Features
 
-- Responsive Navigation Bar
-- Hero Section
-- Features Section
-- Student Testimonials
-- Contact Form
-- Mobile Responsive Layout
-- Hover Effects
-- CSS Transitions
+- Responsive layout
+- Flexbox-based design
+- Media Queries for mobile devices
+- Hero section
+- Features section
+- Testimonials section
+- Contact form
+- Hover effects
 
 ## 🛠️ Built With
 
@@ -28,16 +28,17 @@ https://sktawfiq.github.io/landing-page/
 - Flexbox
 - Media Queries
 
-## 📚 What I Learned
+## 📁 Project Structure
 
-- Semantic HTML
-- Flexbox Layouts
-- Responsive Design
-- Media Queries
-- Forms & Validation
-- CSS Hover Effects
-- CSS Transitions
+```
+landing-page/
+├── assets/
+│   └── landing-page-preview.png
+├── index.html
+├── style.css
+└── README.md
+```
 
 ## 👨‍💻 Author
 
-SK Tawfiq Hasib
+**SK Tawfiq Hasib**
