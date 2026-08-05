@@ -6,7 +6,6 @@ body {
   width: 90%;
   max-width: 1200px;
   margin: auto;
-  background-color: white;
 }
 
 header {
@@ -32,6 +31,7 @@ header {
 .links a {
   color: white;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .links a:hover {
@@ -49,9 +49,13 @@ section {
   background-color: #d3d3d3;
 }
 
+.hero p {
+  max-width: 600px;
+}
+
 .hero_btn {
   display: flex;
-  gap: 50px;
+  gap: 20px;
   padding: 30px;
 }
 
@@ -61,7 +65,7 @@ section {
   color: white;
   padding: 12px 24px;
   border-radius: 8px;
-  transition: 0.2s;
+  transition: background-color 0.2s ease;
 }
 
 .hero_btn a:hover {
@@ -104,18 +108,26 @@ form {
   margin: 10px;
 }
 
+input,
+textarea {
+  width: 250px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+}
+
 .btn {
   background-color: rgba(63, 196, 30, 0.781);
   border-radius: 15px;
   margin: 10px;
   padding: 10px;
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
   color: white;
   background-color: blueviolet;
   cursor: pointer;
-  transition: 0.3s;
 }
 
 footer {
@@ -123,12 +135,34 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: rgb(50, 50, 145);
-  margin: 10px;
+  margin: 10px 10px 20px;
   border-radius: 15px;
 }
 
 @media (max-width: 768px) {
   header {
+    padding: 20px;
+  }
+
+  .logo {
+    padding: 0 0 20px;
+  }
+
+  h1,
+  p {
+    text-align: center;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .links {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero_btn {
     flex-direction: column;
   }
 
@@ -138,5 +172,10 @@ footer {
 
   .reviews {
     flex-direction: column;
+  }
+
+  .form-group {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
