@@ -23,38 +23,49 @@ header {
   padding: 20px;
 }
 
-nav .links {
-  color: white;
+.links {
+  display: flex;
   gap: 20px;
   padding: 20px;
 }
 
-.hero {
+.links a {
+  color: white;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: yellow;
+}
+
+section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 10px;
-  padding: 10px;
+  padding: 20px;
   border-radius: 15px;
   background-color: #d3d3d3;
 }
 
 .hero_btn {
+  display: flex;
   gap: 50px;
   padding: 30px;
-  border-radius: 10px;
 }
 
-.features {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: #d3d3d3;
+.hero_btn a {
+  text-decoration: none;
+  background: #4caf50;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+
+.hero_btn a:hover {
+  background: #2563eb;
 }
 
 .features_grid {
@@ -64,15 +75,8 @@ nav .links {
   gap: 40px;
 }
 
-.testimonials {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: #d3d3d3;
+.feature-card {
+  text-align: center;
 }
 
 .reviews {
@@ -82,15 +86,14 @@ nav .links {
   gap: 40px;
 }
 
-.contact {
+.testimonial-card {
+  text-align: center;
+}
+
+form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 15px;
-  background-color: #d3d3d3;
 }
 
 .form-group {
@@ -112,6 +115,7 @@ nav .links {
   color: white;
   background-color: blueviolet;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 footer {
